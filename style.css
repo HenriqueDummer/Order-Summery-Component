@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 71px;
+    background-color: white;
+    width: 327px;
+    height: 568px;
+    border-radius: 20px;
+}
+
+.img_container img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 26px;
+}
+
+.text h1 {
+    color: hsl(223, 47%, 23%);
+    font-size: 22.2px;
+    font-weight: 900;
+}
+
+.text p {
+    color: hsl(224, 23%, 55%);
+    font-size: 15px;
+    margin-top: 17px;
+    line-height: 25px;
+    padding: 0 35px;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    justify-content: space-around;
+}
+
+.price {
+    margin-left: -25px;
+    margin-top: -3px;
+}
+
+.price h2 {
+    color: hsl(223, 47%, 23%);
+    font-size: 15px;
+    font-weight: 900;
+    padding: 2px;
+}
+
+.price p {
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.plan a {
+    color: hsl(245, 75%, 52%);
+    font-size: 13.3px;
+    font-weight: 900;
+}
+
+.plan a:hover {
+    color: hsl(245, 75%, 68%);
+    cursor: pointer;
+}
+
+.button_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button_container button {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+    margin: 0 auto;
+    margin-bottom: 8px;
+    width: 278px;
+    height: 50px;
+    border: none;
+}
+
+#proceed:hover {
+    cursor: pointer;
+    background-color:hsl(245, 75%, 68%);
+}
+
+#cancel {
+    background-color: white;
+}
+
+#cancel:hover {
+    color: hsl(224, 23%, 35%);
+    cursor: pointer;
+}
+
+#proceed {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 12px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (min-width: 1440px) {
+    .card {
+        margin-top: 101px;
+        width: 450px;
+        height: 700px;
+    }
+
+    .text {
+        margin-top: 40px;
+    }
+
+    .text h1 {
+        font-size: 28px;
+    }
+
+    .text p {
+        font-size: 16.3px;
+        padding: 0 50px;
+        line-height: 26px;
+    }
+
+    .plan {
+        padding: 44px 24px;
+    }
+
+    .price {
+        margin-left: -76px;
+    }
+
+    .price  h2 {
+        font-size: 17px;
+    }
+
+    .price p {
+        font-size: 17px;
+    }
+
+    .plan a {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .button_container button {
+        width: 354px;
+        margin-top: 13px;
+    }
+}
